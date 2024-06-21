@@ -394,11 +394,11 @@ if __name__ == '__main__':
         mvn_insert(products_pdf=readcsv(csv=mvn_localpath))
         print("Maevn Execution completed!")
         # send_email(subject="WySMart eCommerce", body="All products have been updated successfully in Azure DB",
-        #            from_email="shahan@autonicals.org", to_email="Joey@WySMartDigital.com",
+        #            from_email="shahan@autonicals.org", to_email="shahan@autonicals.com",
         #            cc_emails=["shahan@autonicals.com", "shahan.mehboob@outlook.com"])
     except Exception as e:
         print("Error:", e)
         send_email(subject="WySmart eCommerce", body="Failed to updated products in DB.",
-                   from_email="shahan@autonicals.org", to_email="Joey@WySMartDigital.com",
+                   from_email="shahan@autonicals.org", to_email="shahan@autonicals.com",
                    cc_emails=["shahan@autonicals.com", "shahan.mehboob@outlook.com"])
         exit()
