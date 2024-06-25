@@ -37,7 +37,7 @@ if __name__ == '__main__':
     metadata.reflect(bind=engine)
     product_table = Table("wproducts", metadata, autoload=True, autoload_with=engine)
 
-    products = wcapi.get(f"products/1214").json()
+    products = wcapi.get(f"products").json()
 
     for product in products:
         id = product['id']
