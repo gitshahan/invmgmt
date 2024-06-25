@@ -38,8 +38,6 @@ if __name__ == '__main__':
     product_table = Table("wproducts", metadata, autoload=True, autoload_with=engine)
 
     products = wcapi.get(f"products/1214").json()
-    print(json.dumps(products, indent=4))
-    exit()
 
     for product in products:
         id = product['id']
