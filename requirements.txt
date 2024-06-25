@@ -1,2 +1,7 @@
 pandas
 sqlalchemy
+python-dotenv
+azure-identity
+azure-keyvault
+woocommerce
+pyodbc
